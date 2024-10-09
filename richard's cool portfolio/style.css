@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+  font-family: Arial;
+  cursor: crosshair;
+
+}
+
+header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(230, 230, 230);
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  transform: skewY(0); 
+  background-color: transparent;
+  color: #000;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 20px;
+  transition: all 0.3s 0.3s ease-in-out;
+}
+
+header nav ul li a:hover{
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  transform: skewX(10deg); 
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 30px;
+ flex-wrap: wrap; 
+ 
+}
+
+@keyframes identifier {
+  0%{
+  opacity: 0;
+  transform: translateX(100px);
+}100%{
+  opacity: 0.3;
+
+}
+}
+
+@keyframes identify {
+  0%{
+  opacity: 0;
+  transform: translateX(-100px);
+}100%{
+  opacity: 0.3;
+
+}
+}
+
+main .text{
+  max-width: 500px;
+  font-family: sans-serif!important;
+  font-style: italic;
+  animation: identifier 0.3s ease-in-out;
+}
+
+img{
+  animation: identifier 0.3s ease-in-out;
+}
+
+footer{
+  text-align: center;
+  bottom: 0;
+  left: 40%;
+  position: fixed;
+  background-color: rgb(230, 230, 230);
+
+}
+
+a:visited{
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  transform: skewX(10deg); 
+}
+
+header nav{
+  animation: identify 0.5s ease-in-out;
+}
+.awesome-text h1{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: rgb(34, 29, 30);
+  -webkit-text-stroke-width: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+}
+
+.awesome-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: 20%;
+  padding-left: 3%;
+  padding-top: 3%;
+  
+}
+
+@media (max-width: 1000px){
+  .pics{
+    width: 500px;
+    height: 700px;
+  }
+  *{
+  width: 100%;
+
+  }
+}
